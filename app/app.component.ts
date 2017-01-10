@@ -11,7 +11,7 @@ export class AppComponent {
 	    url: 'http://localhost:10050/upload'
 	  };
 
-	  handleUpload(data): void {
+	  handleUpload(data: any): void {
 	    if (data && data.response) {
 	      data = JSON.parse(data.response);
 	      this.uploadFile = data;

@@ -26,7 +26,8 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      'ng2-uploader':              'npm:ng2-uploader'
+      'ng2-uploader':              'npm:ng2-uploader',
+      'ng2-img-cropper':           'npm:ng2-img-cropper'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -39,6 +40,10 @@
       },
       'ng2-uploader': {
         main: 'ng2-uploader.js',
+        defaultExtension: 'js'
+      },
+      'ng2-img-cropper': {
+        main: 'index.js',
         defaultExtension: 'js'
       }
     }
